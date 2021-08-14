@@ -7,8 +7,7 @@ const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
 
-app.use('/', homeRoutes);
-app.initialize(app);
+router.use('/', homeRoutes);
 
 router.use('/dashboard', dashboardRoutes);
 

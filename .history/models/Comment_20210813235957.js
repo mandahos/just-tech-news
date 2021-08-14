@@ -42,4 +42,4 @@ Comment.init(
     }
 );
 
-module.exports = Comment;
+model.exports = Comment;

@@ -1,4 +1,3 @@
-const { model } = require('mongoose');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -69,4 +68,4 @@ Post.init(
     }
 );
 
-module.exports = Post;
+model.exports = Post;

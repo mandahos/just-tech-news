@@ -69,4 +69,4 @@ Post.init(
     }
 );
 
-module.exports = Post;
+model.exports = Post;

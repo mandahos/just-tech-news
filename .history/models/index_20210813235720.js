@@ -17,10 +17,6 @@ User.hasMany(Comment, {
     foreignKey: 'user_id',
 });
 
-User.hasMany(Vote, {
-    foreignKey: 'user_id'
-});
-
 Post.hasMany(Comment, {
     foreignKey: 'post_id',
 })
@@ -57,4 +53,4 @@ Vote.belongsTo(User, {
     foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Vote, Comment };
+module.exports = { User, Post, Comment };

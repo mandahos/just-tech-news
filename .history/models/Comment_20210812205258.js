@@ -1,3 +1,4 @@
+const { model } = require('mongoose');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -11,7 +12,7 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        comment_text: {
+        input_text: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
@@ -42,4 +43,4 @@ Comment.init(
     }
 );
 
-module.exports = Comment;
+model.exports = Comment;
